@@ -9,13 +9,15 @@ public class WebDriverSettings {
 
     @Before
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "C:/Users/Дарья/Desktop/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:/Users/DPOPOVA/chromedriver.exe");
         driver = new ChromeDriver();
+        driver.manage().window().maximize();
         System.out.println("start");
+
     }
- //   @After
- //   public void close() {
-   //     driver.quit();
-   //     System.out.println("finish");
-  //  }
+    //@After
+    //public void close() {
+        //driver.quit();
+        //System.out.println("finish");
+    //}
 }
